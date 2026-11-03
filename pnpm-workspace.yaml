@@ -1,0 +1,7 @@
+packages:
+  - apps/*
+  - packages/*
+
+# esbuild (vite) needs its postinstall to fetch the platform binary
+allowBuilds:
+  esbuild: true

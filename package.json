@@ -1,0 +1,10 @@
+{
+  "name": "portal-poc",
+  "private": true,
+  "scripts": {
+    "//": "NFR-11: one command per mode starts the whole chain shell -> app-hub -> cad",
+    "dev:all": "pnpm -r --parallel --filter \"./apps/*\" dev",
+    "build:all": "pnpm -r --filter \"./apps/*\" build",
+    "preview:all": "pnpm build:all && pnpm -r --parallel --filter \"./apps/*\" preview"
+  }
+}
