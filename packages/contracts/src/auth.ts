@@ -1,5 +1,4 @@
-import { useContext } from "react";
-import { getOrCreateContext } from "./registry";
+import { createContext, useContext } from "react";
 
 export type User = { name: string };
 
@@ -8,8 +7,7 @@ export type AuthValue = {
   setUser: (user: User) => void;
 };
 
-// FR-14: created through the global registry
-export const AuthContext = getOrCreateContext<AuthValue | null>("auth", null);
+export const AuthContext = createContext<AuthValue | null>(null);
 
 export function useAuth(): AuthValue {
   const value = useContext(AuthContext);

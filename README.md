@@ -8,7 +8,7 @@ The shell knows nothing about CAD. Result: [docs/spike-result.md](docs/spike-res
 | `apps/shell` | 5170 | red | host. Owns Router, QueryClient, Auth, Layout |
 | `apps/app-hub` | 5174 | yellow | remote for shell + host for CAD |
 | `apps/cad` | 5175 | green | leaf remote |
-| `packages/contracts` | — | — | Auth/Layout contexts + hooks (MF-shared singleton + `Symbol.for` registry) |
+| `packages/contracts` | — | — | Auth/Layout contexts + hooks (MF-shared singleton) |
 | `packages/remote-boundary` | — | — | `RemoteBoundary`: lazy remote + fallback + ErrorBoundary with one smart retry button (FR-16) |
 
 ## Run
