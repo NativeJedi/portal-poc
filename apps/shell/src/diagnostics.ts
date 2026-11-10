@@ -1,10 +1,13 @@
 import React from "react";
+import { AuthContext, LayoutContext } from "@portal/contracts";
 import { queryClient } from "./queryClient";
 
 declare global {
   interface Window {
     __shellReact?: typeof React;
     __shellQueryClient?: typeof queryClient;
+    __shellAuthContext?: typeof AuthContext;
+    __shellLayoutContext?: typeof LayoutContext;
   }
 }
 
@@ -14,5 +17,7 @@ export const mfDebug = import.meta.env.DEV || import.meta.env.VITE_MF_DEBUG === 
 if (mfDebug) {
   window.__shellReact = React;
   window.__shellQueryClient = queryClient;
+  window.__shellAuthContext = AuthContext;
+  window.__shellLayoutContext = LayoutContext;
   console.log("[mf-check] shell: diagnostics globals set");
 }
