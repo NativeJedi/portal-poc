@@ -11,7 +11,7 @@ The spike result must be recorded as one of: **works** / **fallback** / **blocke
 | Package | Version | Shared config |
 |---|---|---|
 | vite | 5.x | — |
-| @module-federation/vite | 1.7.2 | — |
+| @module-federation/vite | 1.25.1 | — |
 | react | 19.0.0 | `singleton: true, strictVersion: true, requiredVersion: "19.0.0"` |
 | react-dom | 19.0.0 | `singleton: true, strictVersion: true, requiredVersion: "19.0.0"` |
 | react-router-dom | 6.30.4 | `singleton: true, strictVersion: true, requiredVersion: "6.30.4"` |

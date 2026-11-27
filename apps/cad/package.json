@@ -15,7 +15,7 @@
     "react-router-dom": "6.30.4"
   },
   "devDependencies": {
-    "@module-federation/vite": "1.7.2",
+    "@module-federation/vite": "1.25.1",
     "@types/node": "22.20.5",
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
